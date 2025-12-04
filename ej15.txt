@@ -1,0 +1,10 @@
+-c seleccionar un rango de caracteres
+-d delimitador, define uqe caracter separa las columnas]
+-f fields, que numero de columna queres extraer basandote en el delimitador -d definido
+-s solo lo que este delimitador
+
+ejemplos
+
+cut -d ":" -f 1,7 /etc/passwd
+ls -l | cut -c 1-10
+ip addr show | grep "inet " | cut -d " " -f 6 | cut -d "/" -f 1
